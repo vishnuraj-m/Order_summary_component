@@ -7,7 +7,7 @@
 body {
     font-family: 'Red Hat Display', sans-serif;
     min-height: 100vh;
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
@@ -97,6 +97,7 @@ body {
     border-radius: 12px;
     margin: 30px 0;
     transition: all 0.3s ease;
+    box-shadow: 0 1px 3px hsl(223, 47%, 23%);
 }
 
 .button_proceed a:hover {
@@ -120,7 +121,7 @@ body {
 @media only screen and (max-width: 425px) {
 
     body {
-        background-image: url(/images/pattern-background-mobile.svg);
+        background-image: url(./images/pattern-background-mobile.svg);
         font-size: 14px;
     }
 
