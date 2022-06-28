@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+
+.main_container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sub_container {
+    padding: 7%;
+}
+
+.text_content h2 {
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text_content p {
+    color: hsl(223, 47%, 23%);
+    opacity: 0.4;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.plan_content_box {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan_content_box_left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.plan_content_box_left div {
+    margin-left: 20px;
+}
+
+.plan_content_box_left h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+
+.plan_content_box_left p {
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+    opacity: 0.4;
+}
+
+.plan_content_box_right a {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    transition: all 0.3s ease;
+}
+
+.plan_content_box_right a:hover {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.button_proceed a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+    margin: 30px 0;
+    transition: all 0.3s ease;
+}
+
+.button_proceed a:hover {
+    opacity: 0.6;
+}
+
+.button_cancel a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 900;
+    transition: all 0.2s ease;
+}
+
+.button_cancel a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 425px) {
+
+    body {
+        background-image: url(/images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+
+    .main_container {
+        max-width: 87%;
+    }
+
+    .text_content h2 {
+        font-size: 23px;
+    }
+
+    .plan_content_box {
+        padding: 12px;
+    }
+
+    .plan_content_box_left div {
+        margin-left: 10px;
+    }
+
+    .button_proceed a,
+    .button_cancel a,
+    .plan_content_box {
+        font-size: 12px;
+    }
+
+    .sub_container {
+        padding: 9% 7%;
+    }
+}
